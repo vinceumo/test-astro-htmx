@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<form hx-post="/prompt" hx-target="#result">
+			<input 
+				type="text"
+				name="prompt">
+			<button class="btn">Submit</button>
+		</form>
+		<div id="result"></div>
+	</main>
+</Layout>
